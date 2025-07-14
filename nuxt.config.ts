@@ -12,5 +12,10 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/scripts'
   ],
-  css: ['~/assets/css/main.css']
+  css: ['~/assets/css/main.css'],
+   content: {
+    preview: {
+      api: 'http://localhost:3000/'
+    }
+  }
 })
