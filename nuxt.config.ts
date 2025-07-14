@@ -18,6 +18,10 @@ export default defineNuxtConfig({
     preset: 'netlify'
   },
     content: {
+    documentDriven: true,
+    studio: {
+      preview: true
+    },
       preview: {
         api: 'https://docs-api360.netlify.app/',
         gitInfo: {
