@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       preview: {
         api: 'https://docs-api360.netlify.app/',
         gitInfo: {
-          name: 'docs API 360',
+          name: 'NuxtContent',
           owner: 'https://github.com/AAlkamel',
           url: 'https://github.com/AAlkamel/NuxtContent'
         }
