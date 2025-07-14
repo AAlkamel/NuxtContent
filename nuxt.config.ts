@@ -13,12 +13,6 @@ export default defineNuxtConfig({
     '@nuxt/scripts'
   ],
   css: ['~/assets/css/main.css'],
-  content: {
-    preview: {
-      api: 'http://localhost:3000/'
-    }
-  }
-  ,nitro: {
-    preset: 'netlify'
-  }
+  
+
 })
