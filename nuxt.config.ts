@@ -1,7 +1,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-  ssr: true,
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -13,13 +12,28 @@ export default defineNuxtConfig({
   ],
   css: ['~/assets/css/main.css'],
   
-  content: {
-    studio: {
-      preview: true
-    }
+    content: {
+    renderer: {
+      anchorLinks: false,
+    },
+    preview: {
+      api: 'https://api.nuxt.studio',
+      dev: true,
+    },
+  },
+    routeRules: {
+    // Needed to activate preview on Nuxt Studio
+    '/': { prerender: false },
   },
   nitro: {
-    preset: 'netlify'
+    experimental: {
+      websocket: true,
+    },
+    prerender: {
+      autoSubfolderIndex: false,
+      crawlLinks: true,
+      // routes: ['/en', '/ar'],
+    },
   },
 
 })
