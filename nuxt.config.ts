@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
-
+  ssr: true,
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
@@ -13,21 +13,13 @@ export default defineNuxtConfig({
   ],
   css: ['~/assets/css/main.css'],
   
+  content: {
+    studio: {
+      preview: true
+    }
+  },
   nitro: {
     preset: 'netlify'
   },
 
-  content: {
-    documentDriven: true,
-    studio: {
-      preview: {
-        api: 'https://docs-api360.netlify.app',
-        gitInfo: {
-          name: 'NuxtContent',
-          owner: 'AAlkamel',
-          url: 'https://github.com/AAlkamel/NuxtContent'
-        }
-      }
-    }
-  }
 })
