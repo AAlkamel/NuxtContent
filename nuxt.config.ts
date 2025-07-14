@@ -21,14 +21,14 @@ export default defineNuxtConfig({
     documentDriven: true,
     studio: {
       preview: true
-    },
-      preview: {
-        api: 'https://docs-api360.netlify.app/',
-        gitInfo: {
-          name: 'NuxtContent',
-          owner: 'https://github.com/AAlkamel',
-          url: 'https://github.com/AAlkamel/NuxtContent'
-        }
-      }
+    }
+      // preview: {
+      //   api: 'https://docs-api360.netlify.app/',
+      //   gitInfo: {
+      //     name: 'NuxtContent',
+      //     owner: 'https://github.com/AAlkamel',
+      //     url: 'https://github.com/AAlkamel/NuxtContent'
+      //   }
+      // }
   }
 })
