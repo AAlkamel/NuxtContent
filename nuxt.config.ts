@@ -16,5 +16,15 @@ export default defineNuxtConfig({
   
   nitro: {
     preset: 'netlify'
+  },
+    content: {
+      preview: {
+        api: 'https://docs-api360.netlify.app/',
+        gitInfo: {
+          name: 'docs API 360',
+          owner: 'https://github.com/AAlkamel',
+          url: 'https://github.com/AAlkamel/NuxtContent'
+        }
+      }
   }
 })
