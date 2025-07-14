@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
@@ -17,18 +16,18 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'netlify'
   },
-    content: {
+
+  content: {
     documentDriven: true,
     studio: {
-      preview: true
+      preview: {
+        api: 'https://docs-api360.netlify.app',
+        gitInfo: {
+          name: 'NuxtContent',
+          owner: 'AAlkamel',
+          url: 'https://github.com/AAlkamel/NuxtContent'
+        }
+      }
     }
-      // preview: {
-      //   api: 'https://docs-api360.netlify.app/',
-      //   gitInfo: {
-      //     name: 'NuxtContent',
-      //     owner: 'https://github.com/AAlkamel',
-      //     url: 'https://github.com/AAlkamel/NuxtContent'
-      //   }
-      // }
   }
 })
