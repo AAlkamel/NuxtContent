@@ -18,6 +18,7 @@
     "@nuxt/scripts": "^0.11.9",
     "@nuxt/ui": "^3.2.0",
     "@unhead/vue": "^2.0.12",
+    "better-sqlite3": "^12.2.0",
     "eslint": "^9.31.0",
     "nuxt": "^3.17.6",
     "typescript": "^5.8.3",
